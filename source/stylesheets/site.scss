@@ -1,4 +1,8 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
 @import "settings";
+@import "foundation/normalize";
 @import "foundation/foundation";
 
 // Or selectively include components
@@ -39,3 +43,31 @@
 //   "foundation/foundation/components/offcanvas",
 //   "foundation/foundation/components/visibility";
 
+#heading {
+  @include grid-row();
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+#rest {
+  @include grid-row();
+  #sidebar {
+    @media #{$small-only} {
+      @include grid-column(6);
+    }
+    @media #{$medium-up} {
+      @include grid-column(2);
+    }
+    ul {
+      @include side-nav();
+    }
+  }
+  #content {
+    @media #{$small-only} {
+      @include grid-column(6);
+    }
+    @media #{$medium-up} {
+      @include grid-column(10);
+    }
+  }
+}
