@@ -2,6 +2,12 @@ WeddingWebsite::Application.routes.draw do
   resources :rsvps
 
   root "welcome#index"
+  get 'event_details'        => 'welcome#event_details'
+  get 'getting_there'        => 'welcome#getting_there'
+  get 'getting_around'       => 'welcome#getting_around'
+  get 'where_to_stay'        => 'welcome#where_to_stay'
+  get 'gift_register'        => 'welcome#gift_register'
+  get 'things_to_see_and_do' => 'welcome#things_to_see_and_do'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
