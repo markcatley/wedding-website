@@ -1,0 +1,25 @@
+- @rsvp ||= Rsvp.new
+
+#rsvp_form
+  %h2 RSVP
+
+  = form_for @rsvp do |f|
+    - if @rsvp.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@rsvp.errors.count, "error")} prevented this rsvp from being saved:"
+        %ul
+          - @rsvp.errors.full_messages.each do |msg|
+            %li= msg
+
+    .field
+      = f.label :names
+      = f.text_field :names
+    .field
+      = f.label :email
+      = f.text_field :email
+    .field
+      = f.label :message
+      = f.text_area :message
+    .actions
+      = f.submit "We're coming", name: :coming
+      = f.submit "We're not", name: :not_coming
