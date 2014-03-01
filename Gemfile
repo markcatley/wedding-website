@@ -47,5 +47,6 @@ gem 'puma'
 
 gem 'foundation-rails'
 gem 'haml-rails'
+gem 'redcarpet'
 
 gem 'rails_12factor', group: :production

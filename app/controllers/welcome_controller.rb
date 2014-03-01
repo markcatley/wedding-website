@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
   def event_details
   end
 
-  def getting_there
+  def getting_to_the_island
   end
 
   def getting_around
