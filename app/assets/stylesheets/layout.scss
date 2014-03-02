@@ -1,3 +1,8 @@
+#wrapper {
+  @include grid-row();
+  background-color:rgba(196,196,196,0.7);
+}
+
 #heading {
   @include grid-row();
   padding-left: 0.9375rem;
@@ -25,4 +30,12 @@
       @include grid-column(10);
     }
   }
+}
+
+body {
+  background: url(/assets/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
 }
