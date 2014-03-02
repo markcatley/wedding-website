@@ -11,9 +11,17 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function () {
+  var httpRegex = /^http[s]?:\/\//;
+  $('a').filter(function() {
+    return httpRegex.test($(this).attr('href'));
+  }).attr('target', '_blank');
+});
