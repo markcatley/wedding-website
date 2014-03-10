@@ -1,0 +1,24 @@
+- @request_for_transport ||= RequestForTransport.new
+
+#transport_form
+  %a{id: 'transport_form'}
+  %h2 Request for Transport
+  
+  %p We will organise transportation from your accommodation to wedding and back again. When you've organised your accomodation please let us know its address.
+
+  = form_for @request_for_transport do |f|
+    - if @request_for_transport.errors.any?
+      #error_explanation
+        %h2= "#{pluralize(@request_for_transport.errors.count, "error")} prevented this rsvp from being saved:"
+        %ul
+          - @request_for_transport.errors.full_messages.each do |msg|
+            %li= msg
+
+    .field
+      = f.label :names
+      = f.text_field :names, placeholder: "Names"
+    .field
+      = f.label :address, "Address on the Island"
+      = f.text_area :address, placeholder: "Address on the Island"
+    .actions
+      = f.submit "Organise transport"

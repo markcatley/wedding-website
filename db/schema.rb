@@ -11,7 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140307231621) do
+ActiveRecord::Schema.define(version: 20140310075251) do
+
+  create_table "request_for_transports", force: true do |t|
+    t.string "names"
+    t.text   "address"
+  end
 
   create_table "rsvps", force: true do |t|
     t.string   "names"
