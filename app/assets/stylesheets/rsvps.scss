@@ -3,7 +3,24 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #rsvp_form {
-  input[type='submit'] {
-    width: 49%;
+  .field {
+    @include grid-row();
+  
+    span.description {
+      @include grid-column(2.35);
+    }
+    span.response.positive {
+      @include grid-column(5.2);
+    }
+    span.response.negative {
+      @include grid-column(4.35);
+    }
+  }
+  .actions {
+    width: 100%;
+    input {
+      width: 100%;
+      padding: 1rem;
+    }
   }
 }

@@ -14,13 +14,33 @@
 
     .field
       = f.label :names
-      = f.text_field :names
+      = f.text_field :names, placeholder: "Names"
     .field
       = f.label :email
-      = f.text_field :email
+      = f.text_field :email, placeholder: "Email"
+    .field
+      = f.label :mobile_number
+      = f.text_field :mobile_number, placeholder: "Mobile number"
+    .field
+      %span.description
+        Wedding
+      %span.response.positive
+        = f.radio_button :wedding_response, "comming"
+        = f.label :wedding_response_comming, "We're coming"
+      %span.response.negative
+        = f.radio_button :wedding_response, "not_comming"
+        = f.label :wedding_response_not_comming, "We're not"
+    .field
+      %span.description
+        BBQ
+      %span.response.positive
+        = f.radio_button :bbq_response, "comming"
+        = f.label :bbq_response_comming, "We're coming"
+      %span.response.negative
+        = f.radio_button :bbq_response, "not_comming"
+        = f.label :bbq_response_not_comming, "We're not"
     .field
       = f.label :message
-      = f.text_area :message
+      = f.text_area :message, placeholder: "Message"
     .actions
-      = f.submit "We're coming", name: :coming
-      = f.submit "We're not", name: :not_coming
+      = f.submit "RSVP"

@@ -1,6 +1,9 @@
 #wrapper {
   @include grid-row();
-  background-color:rgba(196,196,196,0.7);
+  background-color: rgba(196, 196, 196, 0.7);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 #heading {

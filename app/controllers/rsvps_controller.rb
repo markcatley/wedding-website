@@ -5,12 +5,6 @@ class RsvpsController < ApplicationController
   # POST /rsvps.json
   def create
     @rsvp = Rsvp.new(rsvp_params)
-    
-    if params['coming']
-      @rsvp.set_coming
-    else
-      @rsvp.set_not_coming
-    end
 
     @rsvp.save!
 
@@ -27,6 +21,6 @@ class RsvpsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rsvp_params
-      params.require(:rsvp).permit(:names, :email, :message)
+      params.require(:rsvp).permit(:names, :email, :mobile_number, :wedding_response, :bbq_response, :message)
     end
 end

@@ -1,0 +1,10 @@
+#forms {
+  @include grid-row();
+  
+  #rsvp_form {
+    @include grid-column(6);
+  }
+  #transport_form {
+    @include grid-column(6);
+  }
+}
