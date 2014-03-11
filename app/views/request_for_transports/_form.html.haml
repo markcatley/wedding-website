@@ -3,8 +3,6 @@
 #transport_form
   %a{id: 'transport_form'}
   %h2 Request for Transport
-  
-  %p We will organise transportation from your accommodation to wedding and back again. When you've organised your accomodation please let us know its address.
 
   = form_for @request_for_transport do |f|
     - if @request_for_transport.errors.any?
@@ -20,5 +18,8 @@
     .field
       = f.label :address, "Address on the Island"
       = f.text_area :address, placeholder: "Address on the Island"
+
+    %p We will organise transportation from your accommodation to wedding and back again. When you've organised your accomodation please let us know its address.
+
     .actions
       = f.submit "Organise transport"

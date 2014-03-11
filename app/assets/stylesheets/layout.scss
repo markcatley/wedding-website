@@ -1,15 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Flamenco:400);
+
 #wrapper {
   @include grid-row();
   background-color: rgba(196, 196, 196, 0.7);
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding-bottom: 1rem;
+  margin-top: rem-calc(64);
+  margin-bottom: rem-calc(64);
+  padding-bottom: rem-calc(16);
 }
 
 #heading {
   @include grid-row();
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
+  text-align: center;
+  padding-top: rem-calc(64);
+  padding-bottom: rem-calc(64);
+  h1 {
+    font-size: rem-calc(80);
+    padding-top: rem-calc(24);
+    padding-bottom: rem-calc(24);
+  }
 }
 
 #rest {

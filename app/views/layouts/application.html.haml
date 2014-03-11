@@ -11,8 +11,11 @@
     = csrf_meta_tags
   %body
     #wrapper
+      = render 'layouts/messages'
       #heading
+        %h2 FEBRUARY 6, 2015
         %h1 Craig and Mark
+        %h2 WELCOME TO OUR WEDDING WEBSITE!
       #rest
         #sidebar
           %ul
@@ -25,4 +28,5 @@
             %li= link_to 'Things to see and do',  things_to_see_and_do_path
             %li= link_to 'RSVP',                  root_path(anchor: 'rsvp_form')
         #content
+          %h1= yield :title
           = yield

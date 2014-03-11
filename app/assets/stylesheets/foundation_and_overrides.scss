@@ -40,7 +40,7 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: "Flamenco", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
@@ -125,11 +125,11 @@ $secondary-color: lighten($primary-color, 20%);
 // $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(37);
-$h3-font-size: rem-calc(27);
-$h4-font-size: rem-calc(23);
-$h5-font-size: rem-calc(18);
+$h1-font-size: rem-calc(35);
+$h2-font-size: rem-calc(30);
+$h3-font-size: rem-calc(22);
+$h4-font-size: rem-calc(18);
+$h5-font-size: rem-calc(14);
 $h6-font-size: 1rem;
 
 // These control how subheaders are styled.
