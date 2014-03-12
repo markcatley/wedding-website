@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Flamenco:400);
+@import url(http://fonts.googleapis.com/css?family=Flamenco);
+@import url(http://fonts.googleapis.com/css?family=Iceland);
 
 #wrapper {
   @include grid-row();
@@ -11,12 +12,13 @@
 #heading {
   @include grid-row();
   text-align: center;
-  padding-top: rem-calc(64);
-  padding-bottom: rem-calc(64);
   h1 {
     font-size: rem-calc(80);
-    padding-top: rem-calc(24);
-    padding-bottom: rem-calc(24);
+    font-family: 'Flamenco', cursive;
+  }
+  h2 {
+    font-family: 'Iceland', cursive;
+    font-size: rem-calc(40);
   }
 }
 
