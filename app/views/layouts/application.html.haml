@@ -19,14 +19,15 @@
       #rest
         #sidebar
           %ul
-            %li= link_to 'Welcome',               root_path
-            %li= link_to 'Event Details',         event_details_path
-            %li= link_to 'Getting to the island', getting_to_the_island_path
-            %li= link_to 'Getting around',        getting_around_path
-            %li= link_to 'Where to stay',         where_to_stay_path
-            %li= link_to 'Gift register',         gift_register_path
-            %li= link_to 'Things to see and do',  things_to_see_and_do_path
+            %li= link_to 'Welcome',               root_path(anchor: 'heading_text')
+            %li= link_to 'Event Details',         event_details_path(anchor: 'heading_text')
+            %li= link_to 'Getting to the island', getting_to_the_island_path(anchor: 'heading_text')
+            %li= link_to 'Getting around',        getting_around_path(anchor: 'heading_text')
+            %li= link_to 'Where to stay',         where_to_stay_path(anchor: 'heading_text')
+            %li= link_to 'Gift register',         gift_register_path(anchor: 'heading_text')
+            %li= link_to 'Things to see and do',  things_to_see_and_do_path(anchor: 'heading_text')
             %li= link_to 'RSVP',                  root_path(anchor: 'rsvp_form')
         #content
+          %a{id: 'heading_text'}
           %h1= yield :title
           = yield

@@ -7,13 +7,17 @@
     @include grid-row();
   
     span.description {
-      @include grid-column(2.35);
+      @include grid-column(2.7);
     }
     span.response.positive {
-      @include grid-column(5.2);
+      @include grid-column(5);
     }
     span.response.negative {
-      @include grid-column(4.35);
+      @include grid-column(4.2);
+    }
+
+    .radio_label {
+      margin: 0;
     }
   }
   .actions {
