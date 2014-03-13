@@ -9,7 +9,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: darken(#726159, 5%);
+  color: #64554E;
   font-family: 'Duru Sans', sans-serif;
   text-align: center;
 }
@@ -50,19 +50,6 @@ body {
 }
 
 #sidebar {
-  margin-top: rem-calc(64);
-  a {
-    text-align: center;
-    font-size: rem-calc(16);
-  }
-  li {
-    border-top-width: 1px;
-    border-top-style: solid;
-    padding: rem-calc(8 0);
-  }
-  li:first-of-type {
-    border-top-style: none;
-  }
 }
 
 #rest {
@@ -75,7 +62,24 @@ body {
       @include grid-column(3);
     }
     ul {
-      @include side-nav();
+      @include side-nav(
+        $link-color: #372f2b,
+        $link-color-hover: lighten(#372f2b, 10%),
+        $font-size: rem-calc(16)
+      );
+      color: darken(#64554E, 50%);
+    }
+    margin-top: rem-calc(64);
+    a {
+      text-align: center;
+    }
+    li {
+      border-top-width: 1px;
+      border-top-style: solid;
+      padding: rem-calc(8 0);
+    }
+    li:first-of-type {
+      border-top-style: none;
     }
   }
   #content {

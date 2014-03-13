@@ -1,6 +1,6 @@
 WeddingWebsite::Application.routes.draw do
   root "welcome#index"
-  get 'event_details'         => 'welcome#event_details'
+  get 'wedding_events'        => 'welcome#wedding_events'
   get 'getting_to_the_island' => 'welcome#getting_to_the_island'
   get 'getting_around'        => 'welcome#getting_around'
   get 'where_to_stay'         => 'welcome#where_to_stay'

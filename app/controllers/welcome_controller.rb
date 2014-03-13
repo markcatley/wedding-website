@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
   def index
   end
 
-  def event_details
+  def wedding_events
   end
 
   def getting_to_the_island
