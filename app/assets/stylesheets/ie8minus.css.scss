@@ -1,0 +1,15 @@
+#wrapper {
+  background-image: url(background.png);
+  background-repeat: repeat;
+  width: 1000px;
+}
+
+#sidebar {
+  float: left;
+  width: 250px;
+}
+
+#content {
+  float: right;
+  width: 750px;
+}
