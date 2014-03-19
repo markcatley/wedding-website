@@ -7,6 +7,13 @@
 #sidebar {
   float: left;
   width: 250px;
+
+  a {
+    color: #372f2b;
+  }
+  a:hover {
+    color: lighten(#372f2b, 10%);
+  }
 }
 
 #content {
