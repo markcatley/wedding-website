@@ -1,5 +1,5 @@
 class Notifications < ActionMailer::Base
-  default from: "www@catley.net.nz", to: ['mark@catley.net.nz', 'craig.munro@raywhite.com']
+  default from: "mark@catley.net.nz", to: ['mark@catley.net.nz', 'craig.munro@raywhite.com']
 
   def rsvp rsvps
     @rsvps = rsvps
