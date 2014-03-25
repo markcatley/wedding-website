@@ -11,11 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140310075251) do
+ActiveRecord::Schema.define(version: 20140325081843) do
 
   create_table "request_for_transports", force: true do |t|
-    t.string "names"
-    t.text   "address"
+    t.string   "names"
+    t.text     "address"
+    t.datetime "sent_at"
   end
 
   create_table "rsvps", force: true do |t|

@@ -51,3 +51,5 @@ gem 'haml-rails'
 gem 'redcarpet'
 
 gem 'rails_12factor', group: :production
+
+gem 'postmark-rails'

@@ -1,0 +1,10 @@
+The following people have RSVPed:
+
+- @rsvps.each do |rsvp|
+  = rsvp.names
+  = rsvp.email
+  = rsvp.mobile_number
+  = "Wedding: #{rsvp.wedding_response}"
+  = "BBQ: #{rsvp.bbq_response}"
+  = rsvp.message
+  = ""
