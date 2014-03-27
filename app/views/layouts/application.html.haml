@@ -37,7 +37,8 @@
             %li=                  link_to 'Where to stay',         where_to_stay_path(anchor: 'heading_text')
             %li=                  link_to 'Gift register',         gift_register_path(anchor: 'heading_text')
             %li=                  link_to 'Things to see and do',  things_to_see_and_do_path(anchor: 'heading_text')
-            %li{class: 'last'}=   link_to 'RSVP',                  root_path(anchor: 'rsvp_form')
+            %li=                  link_to 'RSVP',                  root_path(anchor: 'rsvp_form')
+            %li{class: 'last'}=   link_to 'Contact us',            contact_us_path(anchor: 'heading_text')
         #content
           %a{id: 'heading_text'}
           %h1= yield :title

@@ -7,8 +7,12 @@ WeddingWebsite::Application.routes.draw do
   get 'gift_register'         => 'welcome#gift_register'
   get 'things_to_see_and_do'  => 'welcome#things_to_see_and_do'
 
+  get 'contact_us'  => 'messages#new'
+  post 'contact_us' => 'messages#create'
+
   resources :rsvps
   resources :request_for_transports
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

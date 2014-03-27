@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140325081843) do
+ActiveRecord::Schema.define(version: 20140327065749) do
+
+  create_table "messages", force: true do |t|
+    t.string   "names"
+    t.text     "message"
+    t.datetime "sent_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "request_for_transports", force: true do |t|
     t.string   "names"

@@ -20,4 +20,15 @@ task :email_requests => :environment do
   end
 end
 
-task email_all: [:email_rsvps, :email_requests]
+task :email_messages => :environment do
+  messages = Message.unsent
+  unless messages.empty?
+    Notifications.contact(messages).deliver
+    messages.each do |message|
+      message.sent_at = Time.now
+      message.save
+    end
+  end
+end
+
+task email_all: [:email_rsvps, :email_requests, :email_messages]

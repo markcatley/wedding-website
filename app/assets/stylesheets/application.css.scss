@@ -16,3 +16,14 @@
 @import 'welcome';
 @import 'rsvps';
 @import 'request_for_transport';
+@import 'messages';
+
+form {
+  .actions {
+    width: 100%;
+    input {
+      width: 100%;
+      padding: rem-calc(16);
+    }
+  }
+}
