@@ -33,6 +33,10 @@ form {
   width: 100%;
 }
 
+.space {
+  margin-bottom: rem-calc(20);
+}
+
 #bench_image {
   position: relative;
   top: rem-calc(-32);
