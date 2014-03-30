@@ -27,3 +27,13 @@ form {
     }
   }
 }
+
+.block {
+  overflow: auto;
+  width: 100%;
+}
+
+#bench_image {
+  position: relative;
+  top: rem-calc(-32);
+}

@@ -1,27 +1,31 @@
 - content_for :title do
   Getting around
 
-= image_tag "dingy_on_the_beach.jpg", class: 'right'
-%p
-  Once you're on Waiheke Island there are plenty of options for getting around.
+.block
+  %p
+    Once you're on Waiheke Island there are plenty of options for getting around.
   
-%p
-  The island has a great bus service. The routes begin at the ferry terminal at Matiatia Wharf and wind their way around the island through all of the suburbs terminating at Onetangi or Rocky Bay. The fares and timetables are available
-  = link_to "here", "https://www.fullers.co.nz/tickets-fares/waiheke-island-buses.php)"
-  \.
+  %p
+    The island has a great bus service. The routes begin at the ferry terminal at Matiatia Wharf and wind their way around the island through all of the suburbs terminating at Onetangi or Rocky Bay. The fares and timetables are available
+    = link_to "here", "https://www.fullers.co.nz/tickets-fares/waiheke-island-buses.php)"
+    \.
 
-%p
-  There are several taxi companies such as:
+  = image_tag "dingy_on_the_beach.jpg", class: 'right'
+  %p
+    There are several taxi companies such as:
 
-= image_tag "bench_near_beach.png", class: 'right'
-:markdown
-   - [Waiheke Independent](http://www.waihekeindependenttaxis.co.nz) (ph. 0800 300 372)
-   - [Waiheke Express Taxis](http://www.waihekeexpresstaxis.co.nz) (ph. 0800 700 789)
-   - [Waiheke Executive Transport](http://www.waiheketransport.co.nz) (ph. 0800 372 200)
-   - [Island Taxis](http://islandtaxis.co.nz) (ph. 0800 372 4111)
-  
-  You could also rent a car. There are several rental companies on the island such as:
-  
-   - [Waiheke Auto Rentals](http://www.waihekerentals.co.nz) (ph. 09 372 8998)
-   - [Waiheke Rental Cars](http://www.waihekerentalcars.co.nz) (ph. 09 372 8635)
-   - [Offshore Rentals](http://www.offshorerentals.co.nz) (ph. 09 372 1018)
+  :markdown
+     - [Waiheke Independent](http://www.waihekeindependenttaxis.co.nz) (ph. 0800 300 372)
+     - [Waiheke Express Taxis](http://www.waihekeexpresstaxis.co.nz) (ph. 0800 700 789)
+     - [Waiheke Executive Transport](http://www.waiheketransport.co.nz) (ph. 0800 372 200)
+     - [Island Taxis](http://islandtaxis.co.nz) (ph. 0800 372 4111)
+
+.block
+  %p
+    You could also rent a car. There are several rental companies on the island such as:
+
+  = image_tag "bench_near_beach.png", id: 'bench_image', class: 'right'
+  :markdown
+     - [Waiheke Auto Rentals](http://www.waihekerentals.co.nz) (ph. 09 372 8998)
+     - [Waiheke Rental Cars](http://www.waihekerentalcars.co.nz) (ph. 09 372 8635)
+     - [Offshore Rentals](http://www.offshorerentals.co.nz) (ph. 09 372 1018)
