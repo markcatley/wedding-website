@@ -1,9 +1,7 @@
-class TransportOrganisationsController < ApplicationController
+class RequestForTransportsController < ApplicationController
 
-  # POST /rsvps
-  # POST /rsvps.json
   def create
-    @rsvp = TransportOrganisation.new(rsvp_params)
+    @rsvp = RequestForTransport.new(rsvp_params)
 
     @rsvp.save!
 
@@ -16,6 +14,6 @@ class TransportOrganisationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rsvp_params
-      params.require(:rsvp).permit(:names, :address)
+      params.require(:request_for_transport).permit(:names, :address)
     end
 end
